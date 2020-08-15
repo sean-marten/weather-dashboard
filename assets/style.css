@@ -1,0 +1,12 @@
+h1 {
+    background-color: dodgerblue;
+    padding: 20px;
+}
+
+.input {
+    height: 37px;
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
