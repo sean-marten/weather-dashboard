@@ -10,21 +10,82 @@
       crossorigin="anonymous"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-    <link rel="stylesheet" href="./assets/style.css"/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Weather Dashboard</title>
   </head>
   <body>
-      <h1 class="text-center">Weather Dashboard</h1>
-      <main class="row">
-          <section class="col-4">
-              <h3>Search for a City:</h3>
-              <input class="input"><button class="search btn btn-primary"><i class="fa fa-search fa-lg"></i></button>
-          </section>
-          <section class="col-8"></section>
-      </main>
+    <h1 class="text-center">Weather Dashboard</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <main class="grid col-4">
+          <div class="row"><h3>Search for a City:</h3></div>
+          <div class="row">
+            <div class="input-group mb-3 w-75">
+              <input
+                type="text"
+                class="form-control input"
+                placeholder="City name"
+                aria-label="City name"
+                aria-describedby="button-addon2"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fa fa-search fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h4>Recent Searches:</h4>
+          </div>
+          <div class="row justify ml-3">
+            <div class="list-group w-75">
+              <a href="#" class="list-group-item list-group-item-action">
+                Cras justo odio
+              </a>
+              <a href="#" class="list-group-item list-group-item-action"
+                >Dapibus ac facilisis in</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Morbi leo risus</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Porta ac consectetur ac</a
+              >
+              <a
+                href="#"
+                class="list-group-item list-group-item-action disabled"
+                tabindex="-1"
+                aria-disabled="true"
+                >Vestibulum at eros</a
+              >
+            </div>
+          </div>
+        </main>
+        <div class="grid col-8">
+          <div class="card">
+            <div class="card-header">
+              Real Time Weather
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">City Name</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -1,12 +1,19 @@
 h1 {
-    background-color: dodgerblue;
-    padding: 20px;
+  background-color: dodgerblue;
+  padding: 20px;
+}
+
+h3,
+h4 {
+  margin-left: 5px;
 }
 
 .input {
-    height: 37px;
-    width: 60%;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  width: 80%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.search {
+  width: 50px;
 }
