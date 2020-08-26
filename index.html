@@ -20,67 +20,153 @@
     <h1 class="text-center">Weather Dashboard</h1>
     <div class="container-fluid">
       <div class="row">
-        <main class="grid col-4">
-          <div class="row"><h3>Search for a City:</h3></div>
-          <div class="row">
-            <div class="input-group mb-3 w-75">
-              <input
-                type="text"
-                class="form-control input"
-                placeholder="City name"
-                aria-label="City name"
-                aria-describedby="button-addon2"
-              />
-              <div class="input-group-append">
-                <button
-                  class="btn btn-primary"
-                  type="button"
-                  id="button-addon2"
-                >
-                  <i class="fa fa-search fa-lg"></i>
-                </button>
+        <div class="row col-sm-6 col-md-4 col-lg-4">
+          <main class="container">
+            <div class="row"><h3>Search for a City:</h3></div>
+            <div class="row">
+              <div class="input-group mb-3 w-75">
+                <input
+                  type="text"
+                  class="form-control input"
+                  placeholder="City name"
+                  aria-label="City name"
+                  aria-describedby="button-addon2"
+                />
+                <div class="input-group-append search">
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    <i class="fa fa-search fa-lg"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <h4>Recent Searches:</h4>
-          </div>
-          <div class="row justify ml-3">
-            <div class="list-group w-75">
-              <a href="#" class="list-group-item list-group-item-action">
-                Cras justo odio
-              </a>
-              <a href="#" class="list-group-item list-group-item-action"
-                >Dapibus ac facilisis in</a
-              >
-              <a href="#" class="list-group-item list-group-item-action"
-                >Morbi leo risus</a
-              >
-              <a href="#" class="list-group-item list-group-item-action"
-                >Porta ac consectetur ac</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action disabled"
-                tabindex="-1"
-                aria-disabled="true"
-                >Vestibulum at eros</a
-              >
+            <div class="row">
+              <h4>Recent Searches:</h4>
             </div>
-          </div>
-        </main>
-        <div class="grid col-8">
-          <div class="card">
-            <div class="card-header">
-              Real Time Weather
+            <div class="row justify ml-3">
+              <div class="list-group w-75">
+                <a href="#" class="list-group-item list-group-item-action">
+                  Cras justo odio
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Dapibus ac facilisis in</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Morbi leo risus</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Porta ac consectetur ac</a
+                >
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action disabled"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Vestibulum at eros</a
+                >
+              </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">City Name</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          </main>
+        </div>
+        <div class="row col-lg-8 col-md-8 col-sm-6">
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                Real Time Weather
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">City Name</h5>
+                <p class="card-text">
+                  Temperature:
+                </p>
+                <p class="card-text">
+                  Humidity:
+                </p>
+                <p class="card-text">
+                  Wind Speed:
+                </p>
+                <p class="card-text">
+                  UV Index:
+                </p>
+              </div>
+            </div>
+            <div class="row"><h3>5-Day Forecast:</h3></div>
+            <div class="row">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">8/16/2020</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
+                  <p class="card-text">
+                    Temp:
+                  </p>
+                  <p class="card-text">
+                    Humidity:
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">8/16/2020</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
+                  <p class="card-text">
+                    Temp:
+                  </p>
+                  <p class="card-text">
+                    Humidity:
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">8/16/2020</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
+                  <p class="card-text">
+                    Temp:
+                  </p>
+                  <p class="card-text">
+                    Humidity:
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">8/16/2020</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
+                  <p class="card-text">
+                    Temp:
+                  </p>
+                  <p class="card-text">
+                    Humidity:
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">8/16/2020</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
+                  <p class="card-text">
+                    Temp:
+                  </p>
+                  <p class="card-text">
+                    Humidity:
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">8/16/2020</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
+                  <p class="card-text">
+                    Temp:
+                  </p>
+                  <p class="card-text">
+                    Humidity:
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
