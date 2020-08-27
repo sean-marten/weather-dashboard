@@ -47,134 +47,33 @@
               <h4>Recent Searches:</h4>
             </div>
             <div class="row justify ml-3">
-              <div class="list-group w-75">
-                <a href="#" class="list-group-item list-group-item-action">
-                  Cras justo odio
-                </a>
-                <a href="#" class="list-group-item list-group-item-action"
-                  >Dapibus ac facilisis in</a
-                >
-                <a href="#" class="list-group-item list-group-item-action"
-                  >Morbi leo risus</a
-                >
-                <a href="#" class="list-group-item list-group-item-action"
-                  >Porta ac consectetur ac</a
-                >
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action disabled"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Vestibulum at eros</a
-                >
-              </div>
+              <div class="list-group w-75 recent-searches"></div>
             </div>
           </main>
         </div>
         <div class="row col-lg-8 col-md-8 col-sm-6">
           <div class="container">
-            <div class="card">
-              <div class="card-header">
+            <div class="card rtw">
+              <div class="card-header bg-primary text-center text-white">
                 Real Time Weather
               </div>
               <div class="card-body">
-                <h5 class="card-title">City Name</h5>
-                <p class="card-text">
-                  Temperature:
-                </p>
-                <p class="card-text">
-                  Humidity:
-                </p>
-                <p class="card-text">
-                  Wind Speed:
-                </p>
-                <p class="card-text">
-                  UV Index:
-                </p>
+                <h5 class="card-title name">City Name</h5>
+                <p class="card-text temp">Temperature:</p>
+                <p class="card-text humidity">Humidity:</p>
+                <p class="card-text wind">Wind Speed:</p>
+                <p class="card-text uvi">UV Index:</p>
               </div>
             </div>
-            <div class="row"><h3>5-Day Forecast:</h3></div>
-            <div class="row">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">8/16/2020</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
-                  <p class="card-text">
-                    Temp:
-                  </p>
-                  <p class="card-text">
-                    Humidity:
-                  </p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">8/16/2020</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
-                  <p class="card-text">
-                    Temp:
-                  </p>
-                  <p class="card-text">
-                    Humidity:
-                  </p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">8/16/2020</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
-                  <p class="card-text">
-                    Temp:
-                  </p>
-                  <p class="card-text">
-                    Humidity:
-                  </p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">8/16/2020</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
-                  <p class="card-text">
-                    Temp:
-                  </p>
-                  <p class="card-text">
-                    Humidity:
-                  </p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">8/16/2020</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
-                  <p class="card-text">
-                    Temp:
-                  </p>
-                  <p class="card-text">
-                    Humidity:
-                  </p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">8/16/2020</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Weather symbol</h6>
-                  <p class="card-text">
-                    Temp:
-                  </p>
-                  <p class="card-text">
-                    Humidity:
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="row five-day"><h3>5-Day Forecast:</h3></div>
+            <div class="row forecast-cards"></div>
           </div>
         </div>
       </div>
     </div>
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
     <script
@@ -185,6 +84,11 @@
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+      integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg=="
       crossorigin="anonymous"
     ></script>
     <script src="./assets/app.js"></script>
